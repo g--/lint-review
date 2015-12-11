@@ -15,9 +15,12 @@ class Tool(object):
     def __init__(self, problems, options=None, base_path=None):
         self.problems = problems
         self.base_path = base_path
-        self.options = {}
+        self.options = self.default_options()
         if options:
-            self.options = options
+            self.options.update(options)
+
+    def default_options(self):
+        return {}
 
     def check_dependencies(self):
         """

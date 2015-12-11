@@ -183,6 +183,16 @@ Uses the [flake8](http://pypi.python.org/pypi/flake8) module to check code.
 
 These options are passed into flake8 as cli options.
 
+#### Pylint3k
+
+Uses the [pylint](http://www.pylint.org/) in --py3k mode to check for pytyhon 3 compatability.
+
+*Options*
+
+* `disable` Set which pylint errors you wish to ignore.
+
+These options are passed into pylint as cli options.
+
 #### pep8
 
 Uses the [pep8](http://pypi.python.org/pypi/pep8/1.2) module to check code. 
